@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
 <title>Registration Form</title>
-<link rel="stylesheet" href="style3.css" >
+<link rel="stylesheet" href="style3.css" />
 <head>
 <body>
 <h1>Registration Form</h1>
@@ -22,15 +21,15 @@
 
 <!--Account, terms and conditions-->
 <fieldset>
-<label for="personal-account"><input id="personal-account" type="radio" name="account" class="inline" /> Personal Account</label>
-<label for="business-account"><input id="business-account" type="radio" name="account" class="inline" /> Business Account</label>
-<label for="terms-and-condition"><input id="terms-and-condition" type="checkbox" class="inline" required /> I accept the terms and conditions.</label>
+<label for="personal-account"><input id="personal-account" type="radio" name="personal-account" class="inline" /> Personal Account</label>
+<label for="business-account"><input id="business-account" type="radio" name="business-account" class="inline" /> Business Account</label>
+<label for="terms-and-condition"><input id="terms-and-condition" type="checkbox" name="term-of-condition" class="inline" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
 </fieldset>
 
 <!--upload, age, dropdown, bio-->
 <fieldset>
 <label for="upload-picture">Upload file or picture: <input type="file" id="upload-picture" name="file" /></label>
-<label for="age">Input your age (years): <input type="number" id="age" min="13" max="120" required /></label>
+<label for="age">Input your age (years): <input type="number" id="age" min="13" max="120" name="age" required /></label>
 <label for="referrer">How did you hear about us? 
 <select id="referrer" name="referrer" required>
 <option value="1">(select one)</option>
@@ -42,7 +41,7 @@
 </label>
 <label for="bio">Provide a bio: <textarea placeholder="I like coding on the beach..." id="bio" rows="3" cols="30" name="bio"></textarea></label>
 </fieldset>
-<input type="submit" value="submit">
+<input type="submit" value="submit" />
 </form>
 </body>
 </html>
