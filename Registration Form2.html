@@ -14,25 +14,25 @@
 <!--User Info-->
 <fieldset>
 <label for="first-name">Enter Your First Name: 
-<input id="first-name" type="text"></label>
-<label for="last-name">Enter Your Last Name: <input id="last-name" type="text"></label>
-<label for="email">Enter Your Email: <input id="email" type="email"></label>
-<label for="new-password">Create a New Password: <input id="new-password" type="password"></label>
+<input id="first-name" type="text" required></label>
+<label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required></label>
+<label for="email">Enter Your Email: <input id="email" type="email" required></label>
+<label for="new-password">Create a New Password: <input id="new-password" type="password" required></label>
 </fieldset>
 
 <!--Account, terms and conditions-->
 <fieldset>
 <label for="personal-account"><input id="personal-account" type="radio" name="account" class="inline"> Personal Account</label>
 <label for="business-account"><input id="business-account" type="radio" name="account" class="inline"> Business Account</label>
-<label for="terms-and-condition"><input id="terms-and-condition" type="checkbox" class="inline"> I accept the terms and conditions.</label>
+<label for="terms-and-condition"><input id="terms-and-condition" type="checkbox" class="inline" required> I accept the terms and conditions.</label>
 </fieldset>
 
 <!--upload, age, dropdown, bio-->
 <fieldset>
 <label for="upload-picture">Upload file or picture: <input type="file" id="upload-picture" name="file"></label>
-<label for="age">Input your age (years): <input type="number" id="age" min="13" max="120"></label>
+<label for="age">Input your age (years): <input type="number" id="age" min="13" max="120" required></label>
 <label for="referrer">How did you hear about us? 
-<select id="referrer" name="referrer">
+<select id="referrer" name="referrer" required>
 <option value="1">(select one)</option>
 <option value="2">freeCodeCamp News</option>
 <option value="3">freeCodeCamp YouTube Channel</option>
